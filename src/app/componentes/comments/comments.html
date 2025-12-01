@@ -1,0 +1,7 @@
+<ul>
+    @for(comentario of comentarios; track comentario.id) {
+    <li>{{comentario.name}} - {{comentario.body}}</li>
+    } @empty {
+    <li>No hay comentarios</li>
+    }
+</ul>
